@@ -1,0 +1,9 @@
+*{
+     font-family: 'Coming Soon', cursive;
+     text-align: center;
+}
+ body {
+     background-image: url("images/annalise-braught-19352.jpg");
+     background-size: cover;
+     color: #1F2C1F;
+}

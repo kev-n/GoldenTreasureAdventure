@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/gold.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Golden Coins Adventure
+    </title>
+  </head>
+  <body>
+    <h1>Let the Quest Begin
+    </h1>
+    <p>Travel across the lands in search of the golden coins treasure. Open your browser's console menu to start playing! Good hunting!
+    </p>
+    <button id='mylink'>Go hunting!
+    </button>
+    <audio src=ambience-storm-heavy-rain-thunder-rumble.mp3 autoplay="autoplay" loop>
+    </audio>
+    <script>
+    var myLink = document.getElementById('mylink');
+    myLink.onclick = function() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "adventure.js";
+        document.getElementsByTagName("head")[0].appendChild(script);
+        return false;
+    }
+    </script>
+  </body>
+</html>
